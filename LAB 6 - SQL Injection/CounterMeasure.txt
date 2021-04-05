@@ -1,0 +1,32 @@
+TASK 1:
+
+$sql = $conn->prepare("SELECT id, name, eid, salary, birth, ssn, phoneNumber, address, email, nickname, Password
+	FROM credential
+	WHERE name=? and Password=?");
+$sql->bind_param("ss",$input_uname,$hashed_pwd);
+$sql->execute();
+$sql->bind_result($id, $name, $eid, $salary, $birth, $ssn, $phoneNumber, $address, $email, $nickname, $pwd);
+$sql->fetch();
+$sql->close();
+
+#NOTE: After retrying the attack with prepared statement of Task1, remove the above statements and then perform 
+	task 2 prepared statement. Therefore, it will be better to comment the previous vuln of SQL.
+
+TASK 2:
+
+if ....
+{
+	$sql = $conn->prepare("UPDATE credential SET nickname=?, email=?, address=?, Password=?, PhoneNumber=?
+		WHERE ID=$id;");
+	$sql->bind_param("ssss",$input_nickname,$input_email,$input_address,$hashed_pwd,$input_phonenumber);
+	$sql->execute();
+	$sql->close();
+} else {
+	$sql = $conn->prepare("UPDATE credential SET nickname=?, email=?, address=?, PhoneNumber=?
+		WHERE ID=$id;");
+	$sql->bind_param("ssss",$input_nickname,$input_email,$input_address,$input_phonenumber);
+	$sql->execute();
+	$sql->close();
+
+}
+$conn->close();
