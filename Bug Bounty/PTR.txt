@@ -1,0 +1,61 @@
+1. OS: Linux Kernel 2.6
+ https://www.exploit-db.com/exploits/40839s
+ https://www.exploit-db.com/exploits/33321
+ https://www.rapid7.com/db/modules/exploit/linux/local/sock_sendpage/
+
+2.
+
+ Port 	22/tcp/ssh 	was found to be open 
+ Port 	25/tcp/smtp 	was found to be open
+ Port 	80/tcp/www 	was found to be open
+ Port 	110/tcp/pop3 	was found to be open
+ Port 	143/tcp/imap 	was found to be open
+ Port 	443/tcp/www 	was found to be open
+ Port 	993/tcp/imap 	was found to be open
+ Port 	995/tcp/pop3 	was found to be open
+ Port 	1883/tcp 	was found to be open
+ Port 	3306/tcp 	was found to be open
+ Port 	5432/tcp/postgresql 	was found to be open
+ Port 	5672/tcp 	was found to be open
+ Port 	8009/tcp/ajp13 	was found to be open
+ Port 	8050/tcp/www 	was found to be open -------------------------------------------->/login
+ Port 	8065/tcp/www 	was found to be open
+ Port 	8075/tcp/www	was found to be open -------------------------------------------->/help, /html, /icons, /javascript, /temp, /calendar, /crm, /phppgadmin
+ Port 	8076/tcp/www 	was found to be open
+ Port 	8080/tcp/www 	was found to be open -------------------------------------------->/css, /icons, /img, /javascript, /js, /phppgadmin
+ Port 	8081/tcp/www	was found to be open
+ Port 	8085/tcp/www 	was found to be open
+ Port 	8090/tcp/www 	was found to be open -------------------------------------------->The default welcome page is from Tomcat.
+ Port 	8161/tcp/www 	was found to be open
+ Port 	9050/tcp/www 	was found to be open
+ Port 	9065/tcp/www 	was found to be open
+ Port 	9075/tcp/www 	was found to be open
+ Port 	9080/tcp/www 	was found to be open
+ Port 	9081/tcp/www 	was found to be open
+ Port 	9082/tcp/www  	was found to be open
+ Port 	9085/tcp/www  	was found to be open
+ Port 	9095/tcp/www  	was found to be open
+ Port 	41867/tcp 	was found to be open
+ Port 	61613/tcp 	was found to be open
+ Port 	61614/tcp/www 	was found to be open
+ Port 	61616/tcp/activemq 	was found to be open
+
+
+3.
+	http://demopes.eoxvantage.com:8080/phppgadmin/servers.php
+	https://www.exploit-db.com/exploits/25003
+	https://www.exploit-db.com/exploits/48182
+	
+4. osjs.sid=s%3AiiV0JwyK5DE7L39WpAwc1O72fc2GDFPK.iTh%2Ffyerz9gt1ZOmA44REoXtgNhSvz0jmQ3gj49iGiI
+
+rltoken=8b3228ab1127c1ef4dd4ca9601f52f0e
+
+token:"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2MTgxNTUwODgsImp0aSI6IkZYeEwzeGNHWGp4KzZ6RzE0Y0M2bjVtcSt5V29CbnBMRU9LQjBUTWlQYlU9IiwibmJmIjoxNjE4MTU1MDg4LCJleHAiOjE2MTgyMjcwODgsImRhdGEiOnsidXNlcm5hbWUiOiJ0ZXN0dXNlcjMiLCJhY2NvdW50SWQiOiIzIn19.D-w2-IaFJvY8MpBHTw6VtbfTLo1Em9yXhjipoxvlTtSWYJydQcp8Nsh84O7BRDwtD9m-rYYlGG4vl_rgH-BAYw"
+
+
+
+
+
+
+
+
